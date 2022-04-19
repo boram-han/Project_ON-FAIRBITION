@@ -18,15 +18,118 @@
 
     <div class="header">
         <div class="logo">
-            <a href="#"><h1><span style="color: #e1ff2d;">ON </span>FAIRBITION</h1></a>
+            <a href="#">
+                <h1><span style="color: #e1ff2d;">ON </span>FAIRBITION</h1>
+            </a>
         </div>
         <!-- 네비게이션 -->
         <div class="nav">
 
             <!-- 햄버거메뉴 -->
             <div class="burger">
-                <span onclick="openNav()">&#9776;</span>
+                <div id="myNav" class="burger_menu">
+
+                    <!-- 햄버거 메뉴 클로즈 버튼 -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- 메뉴화면 -->
+                    <div class="menu_page">
+
+                        <!-- 왼쪽 롤링 텍스트 -->
+                        <div class="rolling_text">
+
+                            <p class="first_parallel"></p>
+
+                        </div>
+
+                        <!-- 메뉴 카테고리 -->
+                        <div class="category">
+
+                            <!-- about -->
+                            <div class="menu_about">
+
+                                <div class="alphabet_A">
+                                    <span>A</span>
+                                </div>
+
+                                <ul class="about_sub">
+                                    <li><a href=""
+                                            style="color: #E1FF2D; font-family: LeferiPoint-Black; letter-spacing: 1px;">About</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <!-- exhibition -->
+                            <div class="menu_exhi">
+
+                                <div class="alphabet_E">
+                                    <span>E</span>
+                                </div>
+
+                                <ul class="exhi_sub">
+                                    <li><a href=""
+                                            style="color: #FF4F33; font-family: LeferiPoint-Black; letter-spacing: 1px;">Exhibition</a>
+                                    <li><a href="">전시중</a></li>
+                                    <li><a href="">전시예정</a></li>
+                                    <li><a href="">전시종료</a></li>
+                                    <li><a href="">무료전시</a></li>
+                                    <li><a href="">어린이전시</a></li>
+                                </ul>
+
+                            </div>
+
+                            <!-- fair&expo -->
+                            <div class="menu_fair">
+
+                                <div class="alphabet_F">
+                                    <span>F</span>
+                                </div>
+
+                                <ul class="fair_sub">
+                                    <li><a href=""
+                                            style="color: #19FC67; font-family: LeferiPoint-Black; letter-spacing: 1px;">Fair
+                                            & Expo</a>
+                                    <li><a href="">진행중</a></li>
+                                    <li><a href="">진행예정</a></li>
+                                    <li><a href="">진행종료</a></li>
+                                    <li><a href="">사전등록중</a></li>
+                                </ul>
+
+                            </div>
+
+                            <!-- online -->
+                            <div class="menu_online">
+
+                                <div class="alphabet_O">
+                                    <span>O</span>
+                                </div>
+
+                                <ul class="online_sub">
+                                    <li><a href=""
+                                            style="color: #336DFF; font-family: LeferiPoint-Black; letter-spacing: 1px;">Online</a>
+                                    <li><a href="">전시회</a></li>
+                                    <li><a href="">박람회</a></li>
+                                    <li><a href="">진행중</a></li>
+                                    <li><a href="">진행예정</a></li>
+                                    <li><a href="">진행종료</a></li>
+                                </ul>
+
+                            </div>
+                            <!-- 알파벳 아래 선 -->
+                            <div class="menu_line">
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 햄버거메뉴 오픈 버튼 -->
+                <span class="menu_icon" onclick="openNav()"> &#9776;
+                </span>
             </div>
+
 
             <!-- 검색메뉴 -->
             <div class="search-wrapper">
@@ -162,6 +265,8 @@
 
 <!-- search -->
 <script type="text/javascript" src="search.js"></script>
+<!-- burger-->
+<script type="text/javascript" src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </html>
