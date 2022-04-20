@@ -202,7 +202,6 @@ ion-icon{
 .burger_menu {
     width: 100%;
     position: relative;
-    ;
     position: fixed;
     z-index: 3;
     top: 0;
@@ -221,8 +220,7 @@ ion-icon{
     transition: 0.3s;
 }
 
-.burger_menu a:hover,
-.burger_menu a:focus {
+.burger_menu a:hover, .burger_menu a:focus {
     color: #f1f1f1;
 }
 
@@ -444,7 +442,7 @@ ion-icon{
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row nowrap;
     justify-content: space-around;
@@ -530,7 +528,7 @@ ion-icon{
     transform: translateX(-300%);
 }
 
-input {
+.slider input {
     display: none;
 }
 
@@ -546,16 +544,12 @@ input {
     width: 100%;
     height: 612px;
     font-family: 'LeferiPoint-BlackA';
-    text-transform: uppercase;
-    /* 대문자로 변경 */
-    font-weight: 800;
-    /* 폰트굵기 */
+    text-transform: uppercase;  /* 대문자로 변경 */
+    font-weight: 800;  /* 폰트굵기 */
     font-size: 150px;
-    line-height: 200px;
-    /* 줄간격 */
+    line-height: 200px;  /* 줄간격 */
     text-align: center;
-    letter-spacing: 1px;
-    /* 자간 */
+    letter-spacing: 1px;  /* 자간 */
 
     -webkit-text-fill-color: #232323;
     -webkit-text-stroke-width: 1px;
@@ -672,6 +666,7 @@ input {
     color: #fff;
 }
 
+
 .pagination label::before,
 .pagination label::after {
     content: '';
@@ -698,4 +693,39 @@ input {
 .item_slider_right {
     background: olive;
     flex-basis: 15%;
+    height: 100%;
+}
+
+
+
+
+
+
+.main-content01 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 870px;
+    background-color: red;
+    margin: 0 80px;
+}
+
+.main-content02{
+    display: block;
+    width: 100%;
+    height: 615px;
+    background-color: green;
+}
+
+.main-content03{
+    display: block;
+    width: 100%;
+    height: 770px;
+    background-color: blue;
+}
+.main-content04{
+    display: block;
+    width: 100%;
+    height: 1160px;
+    background-color: orange;
 }
