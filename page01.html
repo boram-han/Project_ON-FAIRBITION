@@ -17,6 +17,7 @@
     <!-- 네이밍 조합 (형태-의미-순서-상태), _(언더스코어) 조합은 파일, 폴더, 이미지에 사용 -->
 
     <div class="header">
+        <!-- logo -->
         <div class="logo">
             <a href="#">
                 <h1><span style="color: #e1ff2d;">ON </span>FAIRBITION</h1>
@@ -37,9 +38,7 @@
 
                         <!-- 왼쪽 롤링 텍스트 -->
                         <div class="rolling_text">
-
                             <p class="first_parallel"></p>
-
                         </div>
 
                         <!-- 메뉴 카테고리 -->
@@ -130,14 +129,10 @@
                 </span>
             </div>
 
-
             <!-- 검색메뉴 -->
-            <div class="search-wrapper">
-                <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search" />
-                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-                </div>
-                <span class="close" onclick="searchToggle(this, event);"></span>
+            <div class="searchBox">
+                <input type="text" placeholder="Type to Search">
+                <ion-icon name="search"></ion-icon>
             </div>
         </div>
     </div>
@@ -264,10 +259,10 @@
 </body>
 
 <!-- search -->
-<script type="text/javascript" src="search.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- burger-->
 <script type="text/javascript" src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </html>
 

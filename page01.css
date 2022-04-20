@@ -100,167 +100,77 @@ body {
 }
 
 /* 검색 */
-.search-wrapper {
+.searchBox{
     position: relative;
     width: 40px;
     height: 40px;
-    background-color: #232323;
-    transition: 0.4s;
-    margin-top: 30px;
     float: right;
-    margin-right: 50px;
-    /* position: absolute;
-    transform: translate(-50%, -50%);  /* 박스 요소 가로, 세로 중앙 정렬
-    top:50%;
-    left:50%; */
+    margin-top: 32px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.5s;
+    /* background: red; */
 }
 
-.search-wrapper .input-holder {
-    height: 50px;
-    width: 40px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0);
-    position: relative;
-    transition: all 0.3s ease-in-out;
-}
-
-/* search 버튼 활성화시 */
-.search-wrapper.active .input-holder {
+.searchBox:hover{
     width: 300px;
-    background: #232323;
-    border-bottom: 2px solid #fff;
-    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    border-bottom: 1.5px solid #fff;
 }
 
-.search-wrapper .input-holder .search-input {
-    width: 100%;
-    height: 40px;
-    padding: 0px 70px 0 20px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: transparent;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: 'SUIT-Light';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #FFF;
-    transform: translate(0, 60px);
-    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
-    transition-delay: 0.3s;
-}
-
-.search-wrapper.active .input-holder .search-input {
-    opacity: 1;
-    transform: translate(0, 10px);
-}
-
-.search-wrapper .input-holder .search-icon {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 6px;
-    background: #232323;
-    padding: 0px;
-    outline: none;
-    position: relative;
-    z-index: 2;
-    float: right;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.search-wrapper.active .input-holder .search-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0px;
-    border-radius: 30px;
-}
-
-.search-wrapper .input-holder .search-icon span {
-    width: 22px;
-    height: 22px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    transform: rotate(-45deg);
-    transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
-}
-
-.search-wrapper.active .input-holder .search-icon span {
-    transform: rotate(-45deg);
-}
-
-.search-wrapper .input-holder .search-icon span::before,
-.search-wrapper .input-holder .search-icon span::after {
-    position: absolute;
+/* .searchBox::before{
     content: '';
-}
-
-.search-wrapper .input-holder .search-icon span::before {
-    width: 3px;
-    height: 14px;
-    left: 8px;
-    top: 18px;
-    border-radius: 2px;
-    background: #fff;
-}
-
-.search-wrapper .input-holder .search-icon span::after {
-    width: 14px;
-    height: 14px;
-    left: 0px;
-    top: 0px;
-    border-radius: 16px;
-    border: 3px solid #fff;
-}
-
-.search-wrapper .close {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: #232323;
     z-index: 1;
-    top: 11px;
-    right: 10px;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    transform: rotate(-180deg);
-    /* 시계 반대방향으로 돌려놓고 active가 될 때 시계방향으로 회전시킴 */
-    transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
-    transition-delay: 0.2s;
 }
 
-.search-wrapper.active .close {
-    right: -50px;
-    transform: rotate(45deg);
-    transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
-    transition-delay: 0.5s;
-}
-
-.search-wrapper .close::before,
-.search-wrapper .close::after {
-    position: absolute;
+.searchBox::after{
     content: '';
-    background: #fff;
-    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: #232323;
+    z-index: 1;
+} */
+
+.searchBox input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border:none;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 1.1em;
+    color: #555;
+    background: #232323;
 }
 
-/* 닫기 X 버튼 십자가로 만들어 rotate 시킴 */
-.search-wrapper .close::before {
-    width: 4px;
-    height: 25px;
-    left: 10px;
-    top: 0px;
+.searchBox input::placeholder,
+.searchBox input{
+    color: transparent;
 }
 
-.search-wrapper .close::after {
-    width: 25px;
-    height: 4px;
-    left: 0px;
-    top: 10px;
+.searchBox:hover input::placeholder,
+.searchBox:hover input{
+    color: #555;
+}
+
+ion-icon{
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 5px;
+    transform: translateX(-0%) translateY(-0%);
 }
 
 /* 메뉴 */
@@ -274,13 +184,13 @@ body {
 }
 
 .menu_icon {
-    font-size: 40px;
+    font-size: 35px;
     color: #fff;
     cursor: pointer;
     display: block;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-15%);
+    transform: translateX(-50%) translateY(-6%);
 }
 
 .category ul {
@@ -381,6 +291,7 @@ body {
     font-family: LeferiPoint-BlackA;
     font-size: 450px;
     background: linear-gradient(-90deg, #E1FF2D 50%, #1A1A1A 50%);
+    background-clip: text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
@@ -413,6 +324,7 @@ body {
     font-family: LeferiPoint-BlackA;
     font-size: 450px;
     background: linear-gradient(-90deg, #FF4F33 62%, #1A1A1A 38%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
@@ -445,6 +357,7 @@ body {
     font-family: LeferiPoint-BlackA;
     font-size: 450px;
     background: linear-gradient(-90deg, #19FC67 62%, #1A1A1A 38%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
@@ -477,6 +390,7 @@ body {
     font-family: LeferiPoint-BlackA;
     font-size: 450px;
     background: linear-gradient(-90deg, #336DFF 50%, #1A1A1A 50%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
