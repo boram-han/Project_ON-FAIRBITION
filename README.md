@@ -1,2 +1,6 @@
-# Project_ON-FAIRBITION
-프로젝트(진행中)_전시/박람회 소개, 정보사이트
+# ON FAIRBITION
+전시/박람회 #정보사이트
+
+👉 프로젝트 진행中
+
+
