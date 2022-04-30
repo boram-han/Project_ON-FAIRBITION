@@ -29,121 +29,87 @@
             <!-- 햄버거메뉴 -->
             <div class="burger">
                 <div id="myNav" class="burger_menu">
-
                     <!-- 햄버거 메뉴 클로즈 버튼 -->
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
                     <!-- 메뉴화면 -->
                     <div class="menu_page">
-
                         <!-- 왼쪽 롤링 텍스트 -->
-                        <div class="rolling_text">
-                            <p class="first_parallel"></p>
-                        </div>
-
+                        <div class="rolling_text"><p class="first_parallel"></p></div>
                         <!-- 메뉴 카테고리 -->
                         <div class="category">
-
                             <!-- about -->
                             <div class="menu_about">
-
-                                <div class="alphabet_A">
-                                    <span>A</span>
-                                </div>
-
-                                <ul class="about_sub">
-                                    <li><a href=""
-                                            style="color: #E1FF2D; font-family: LeferiPoint-Black; letter-spacing: 1px;">About</a>
-                                    </li>
-                                </ul>
-
+                                <div class="alphabet_A"><span>A</span></div>
+                                <ul class="about_sub"><li><a href="#" style="color: #E1FF2D; font-family: LeferiPoint-Black; letter-spacing: 1px;">About</a></li></ul>
                             </div>
-
                             <!-- exhibition -->
                             <div class="menu_exhi">
-
-                                <div class="alphabet_E">
-                                    <span>E</span>
-                                </div>
-
+                                <div class="alphabet_E"><span>E</span></div>
                                 <ul class="exhi_sub">
-                                    <li><a href=""
-                                            style="color: #FF4F33; font-family: LeferiPoint-Black; letter-spacing: 1px;">Exhibition</a>
-                                    <li><a href="">전시중</a></li>
-                                    <li><a href="">전시예정</a></li>
-                                    <li><a href="">전시종료</a></li>
-                                    <li><a href="">무료전시</a></li>
-                                    <li><a href="">어린이전시</a></li>
+                                    <li><a href="#" style="color: #FF4F33; font-family: LeferiPoint-Black; letter-spacing: 1px;">Exhibition</a>
+                                    <li><a href="#">전시중</a></li>
+                                    <li><a href="#">전시예정</a></li>
+                                    <li><a href="#">전시종료</a></li>
+                                    <li><a href="#">무료전시</a></li>
+                                    <li><a href="#">어린이전시</a></li>
                                 </ul>
-
                             </div>
-
                             <!-- fair&expo -->
                             <div class="menu_fair">
-
-                                <div class="alphabet_F">
-                                    <span>F</span>
-                                </div>
-
+                                <div class="alphabet_F"><span>F</span></div>
                                 <ul class="fair_sub">
-                                    <li><a href=""
-                                            style="color: #19FC67; font-family: LeferiPoint-Black; letter-spacing: 1px;">Fair
-                                            & Expo</a>
-                                    <li><a href="">진행중</a></li>
-                                    <li><a href="">진행예정</a></li>
-                                    <li><a href="">진행종료</a></li>
-                                    <li><a href="">사전등록중</a></li>
+                                    <li><a href="#" style="color: #19FC67; font-family: LeferiPoint-Black; letter-spacing: 1px;">Fair & Expo</a>
+                                    <li><a href="#">진행중</a></li>
+                                    <li><a href="#">진행예정</a></li>
+                                    <li><a href="#">진행종료</a></li>
+                                    <li><a href="#">사전등록중</a></li>
                                 </ul>
-
                             </div>
-
                             <!-- online -->
                             <div class="menu_online">
-
-                                <div class="alphabet_O">
-                                    <span>O</span>
-                                </div>
-
+                                <div class="alphabet_O"><span>O</span></div>
                                 <ul class="online_sub">
-                                    <li><a href=""
-                                            style="color: #336DFF; font-family: LeferiPoint-Black; letter-spacing: 1px;">Online</a>
-                                    <li><a href="">전시회</a></li>
-                                    <li><a href="">박람회</a></li>
-                                    <li><a href="">진행중</a></li>
-                                    <li><a href="">진행예정</a></li>
-                                    <li><a href="">진행종료</a></li>
+                                    <li><a href="#" style="color: #336DFF; font-family: LeferiPoint-Black; letter-spacing: 1px;">Online</a>
+                                    <li><a href="#">전시회</a></li>
+                                    <li><a href="#">박람회</a></li>
+                                    <li><a href="#">진행중</a></li>
+                                    <li><a href="#">진행예정</a></li>
+                                    <li><a href="#">진행종료</a></li>
                                 </ul>
-
                             </div>
                             <!-- 알파벳 아래 선 -->
                             <div class="menu_line">
                                 <hr>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- 햄버거메뉴 오픈 버튼 -->
-                <span class="menu_icon" onclick="openNav()"> &#9776;
-                </span>
+                <span class="menu_icon" onclick="openNav()"> &#9776;</span>
             </div>
 
             <!-- 검색메뉴 -->
             <div class="searchBox">
-                <input type="text" placeholder="Type to Search">
+                <input type="text" placeholder="Type to Search" style="color: #fff;">
                 <ion-icon name="search"></ion-icon>
             </div>
         </div>
     </div>
 
+    <!-- 메인 슬라이드 -->
     <div class="main">
         <div class="container">
-            <div class="item_slider_left"></div>
+            <div class="item_slider_left">
+                <div class="prev">
+                    <div class="prev_line01"></div>
+                    <div class="prev_line02"></div>
+                    <div class="prev_text">PREV</div>
+                </div>
+            </div>
 
             <div class="item_slider">
-                <div class="slider" id="slider">
-                    <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="0"
+                 <div class="slider" id="slider">
+                   <!-- <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="0"
                         checked id="slide-radio-1">
                     <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="1"
                         id="slide-radio-2">
@@ -157,7 +123,7 @@
                         <label for="slide-radio-2"></label>
                         <label for="slide-radio-3"></label>
                         <label for="slide-radio-4"></label>
-                    </div>
+                    </div> -->
 
                     <!-- 슬라이드01 -->
                     <div class="slide" id="slide-01">
@@ -173,8 +139,7 @@
                     <div class="slide" id="slide-02">
                         <div class="slide-content">
                             <h1><span style=letter-spacing:0.2em;>EXHIBITION
-                                    <span class="slide-pointtext-02">EXHIBITION</span>
-                                    EXHIBITION</span></h1>
+                                    <span class="slide-pointtext-02">EXHIBITION</span>EXHIBITION</span></h1>
                             <a href="#"><span>전시</span> 확인하기</a>
                         </div>
                     </div>
@@ -182,8 +147,7 @@
                     <div class="slide" id="slide-03">
                         <div class="slide-content">
                             <h1><span style=letter-spacing:0.2em;>FAIR&EXPO
-                                    <span class="slide-pointtext-03">FAIR&EXPO</span>
-                                    FAIR&EXPO</span></h1>
+                                    <span class="slide-pointtext-03">FAIR&EXPO</span>FAIR&EXPO</span></h1>
                             <a href="#"><span>전시</span> 확인하기</a>
                         </div>
                     </div>
@@ -191,24 +155,30 @@
                     <div class="slide" id="slide-04">
                         <div class="slide-content">
                             <h1><span style=letter-spacing:0.45em;>ON-LINE<br>
-                                    <span class="slide-pointtext-04">ON-LINE</span><br>
-                                    ON-LINE</span></h1>
+                                    <span class="slide-pointtext-04">ON-LINE</span><br>ON-LINE</span></h1>
                             <a href="#"><span>전시</span> 확인하기</a>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="item_slider_right"></div>
+            <div class="item_slider_right">
+                <div class="prev">
+                    <div class="next_line01"></div>
+                    <div class="next_line02"></div>
+                    <div class="next_text">NEXT</div>
+                </div>
+            </div>
         </div>
     </div>
-
+    
+    <!-- 컨텐츠1_ON EXHIBITION_핫한전시 -->
     <div class="main-content01">
         <div class="content01-text">
-            <p></p>
-            <p></p>
-            <a href="#"></a>
+            <p class="caption-01">많은 사람들이 Pick한 핫한 전시</p>
+            <p class="maintitle-01">ON EXHIBITION</p>
+            <a href="#">바로가기 +</a>
+            <div class="exhibition_line"></div>
         </div>
         <div class="dragslide">
             <div class="slidebox" id="dragslide-slide01"><a href="#"><img src=""></a></div>
@@ -224,11 +194,13 @@
         </div>
     </div>
 
+    <!-- 컨텐츠2_ON FAIR & EXPO_인기박람회 -->
     <div class="main-content02">
         <div class="content02-text">
-            <p></p>
-            <p></p>
-            <a href="#"></a>
+            <p class="caption-02">끊이지 않는 인기 박람회</p>
+            <p class="maintitle-01"><span style="color: #232323;">ON FAIR & EXPO</span></p>
+            <a href="#">바로가기 +</a>
+            <div class="fair_line"></div>
         </div>
         <div class="section">
             <div class="aside01"><a href="#"><img src=""></a></div>
@@ -237,25 +209,120 @@
         </div>
     </div>
 
+    <!-- 컨텐츠3_FAIRBITION NEWS_전시&박람회 기사 -->
     <div class="main-content03">
         <div class="content03-text">
-            <p></p>
-            <p></p>
-            <a href="#"></a>
+            <p class="maintitle-01" style="line-height: 90px;">FAIRBITION<br>NEWS</p>
+            <p class="caption-01" style="line-height: 15px;">관심있는 전시 & 박람회 기사들을 읽어보세요.</p>
+            <a href="#" style="line-height: 100px;">더보기 +</a>
         </div>
         <div class="news"></div>
     </div>
 
+    <!-- 컨텐츠4_Social Media -->
     <div class="main-content04">
         <div class="content04-text">
-            <p></p>
-            <p></p>
-            <p></p>
+            <p class="maintitle-02">Social Media</p>
+            <p class="caption-02">많은 분들이 눈에 담아 간 순간을 <span style="font-weight:bold; color:#336DFF">온페어비션</span>과 함께 하세요
+            </p>
+            <div class="social_line"></div>
+            <p class="caption-03">#ON PAIRBITION</p>
         </div>
         <div class="sns"></div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="footer_left">
+            <div class="footer_logo">
+                <a href="#">
+                    <p><span style="color: #e1ff2d;">ON </span>FAIRBITION</p1>
+                </a>
+            </div>
+            <div class="footer_menu">
+                <a href="#">
+                    <div>ABOUT</div>
+                </a>
+                <p>|</p>
+                <a href="#">
+                    <div>EXHIBITION</div>
+                </a>
+                <p>|</p>
+                <a href="#">
+                    <div>FAIR & EXPO</div>
+                </a>
+                <p>|</p>
+                <a href="#">
+                    <div>ONLINE</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer_right">
+            <div class="people_boram">
+                <div class="box"><img src="/image/borami.png"></div>
+                <div class="profile_1">
+                    <div class="name">Han Boram <span style="font-size: 12pt; font-family: 'SUIT-Light';"> 한보람</span>
+                    </div>
+                    <div class="people_line"> </div>
+                    <div class="kakaotalk"><a href="#">Open kakaotalk</a></div>
+                    <div class="email"><a href="#">borami0920@gmail.com</a></div>
+                    <div class="site"><a href="#">www.fortfolio.com</a></div>
+                    <div class="icone_svg">
+                        <a href="#"><svg width="25px" hight="25px" fill="#a1a1a1" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg></a>
+                        <a href="#"><svg width="25px" hight="25px" fill="#a1a1a1" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path
+                                    d="M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z" />
+                            </svg></a>
+                        <a href="#"><svg width="25px" hight="25px" fill="#a1a1a1" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="people_yewon">
+                <div class="box"><img src="/image/yewon.png"></div>
+                <div class="profile_2">
+                    <div class="name">Lee Yewon <span style="font-size: 12pt; font-family: 'SUIT-Light';"> 이예원</span>
+                    </div>
+                    <div class="people_line"> </div>
+                    <div class="kakaotalk"><a href="#">Open kakaotalk</a></div>
+                    <div class="email"><a href="#">zzjh1521@naver.com</a></div>
+                    <div class="site"><a href="#">www.fortfolio.com</a></div>
+                    <div class="icone_svg">
+                        <a href="#"><svg width="25px" hight="25px" fill="#a1a1a1" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg></a>
+                        <a href="#"><svg width="25px" hight="25px" fill="#a1a1a1" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path
+                                    d="M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z" />
+                            </svg></a>
+                        <a href="#"><svg width="25px" hight="25px" fill="#a1a1a1" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div class="footer_line"> </div>
+            <div class="copyright_text">
+                <p style="float: left;">Copyright © 2022 Han Bo-ram Lee Ye-won. All rights reserved.</p>
+                <p style="float: right;">This page is optimized for Google Chrome.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <!-- search -->

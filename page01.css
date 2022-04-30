@@ -33,8 +33,6 @@
     font-style: normal;
 }
 
-/* @import "reset.css"; */
-
 /* CSS Reset */
 * {
     margin: 0;
@@ -50,22 +48,18 @@ body {
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    /* max-height: 1080px; */
     font-family: 'SUIT-Light';
-    overflow: hidden;
 }
 
-/* header */
+/* ================== header 시작 ================== */
 .header {
     width: 100%;
     height: 80px;
-    display: block;
-    /* 한 줄 모두 차지 */
+    display: block;    /* 한 줄 모두 차지 */
 }
 
 /* logo */
 .logo {
-    /*  background: orange; */
     width: 50%;
     height: 100%;
     display: table;
@@ -80,7 +74,6 @@ body {
 
 .logo h1 {
     color: #fff;
-    /* vertical-align: bottom; */
     display: table-cell;
     font-family: 'LeferiPoint-BlackA';
     font-size: 25px;
@@ -89,7 +82,6 @@ body {
 
 /* nav */
 .nav {
-    /* background-color: yellow; */
     width: 50%;
     height: 100%;
     display: table;
@@ -98,7 +90,7 @@ body {
 }
 
 /* 검색 */
-.searchBox{
+.searchBox {
     position: relative;
     width: 40px;
     height: 40px;
@@ -109,41 +101,19 @@ body {
     align-items: center;
     justify-content: flex-end;
     transition: 0.5s;
-    /* background: red; */
 }
 
-.searchBox:hover{
+.searchBox:hover {
     width: 300px;
-    border-bottom: 1.5px solid #fff;
+    font-family: 'SUIT-Light';
+    border-bottom: 2px solid #fff;
 }
 
-/* .searchBox::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 100%;
-    background: #232323;
-    z-index: 1;
-}
-
-.searchBox::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 100%;
-    background: #232323;
-    z-index: 1;
-} */
-
-.searchBox input{
+.searchBox input {
     position: relative;
     width: 100%;
     height: 100%;
-    border:none;
+    border: none;
     padding: 10px 20px;
     outline: none;
     font-size: 1.1em;
@@ -151,17 +121,15 @@ body {
     background: #232323;
 }
 
-.searchBox input::placeholder,
-.searchBox input{
+.searchBox input::placeholder, .searchBox input {
     color: transparent;
 }
 
-.searchBox:hover input::placeholder,
-.searchBox:hover input{
+.searchBox:hover input::placeholder, .searchBox:hover input {
     color: #555;
 }
 
-ion-icon{
+ion-icon {
     font-size: 32px;
     color: #fff;
     cursor: pointer;
@@ -288,7 +256,7 @@ ion-icon{
     font-size: 450px;
     background: linear-gradient(-90deg, #E1FF2D 50%, #1A1A1A 50%);
     background-clip: text;
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     z-index: 4;
@@ -303,7 +271,7 @@ ion-icon{
     left: 10px;
 }
 
-/* menu_exhi css */
+/* menu_exhi */
 .menu_exhi {
     width: 300px;
     height: 1080px;
@@ -336,7 +304,7 @@ ion-icon{
     left: 10px;
 }
 
-/* menu_fair css */
+/* menu_fair */
 .menu_fair {
     width: 300px;
     height: 1080px;
@@ -369,7 +337,7 @@ ion-icon{
     left: 10px;
 }
 
-/* menu_online css */
+/* menu_online */
 .menu_online {
     width: 300px;
     height: 1080px;
@@ -412,23 +380,7 @@ ion-icon{
     z-index: 6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* main */
+/* ================== main 시작 ================== */
 :root {
     --slide-1-link: #E1FF2D;
     --slide-2-link: #FF4F33;
@@ -438,6 +390,7 @@ ion-icon{
 
 .main {
     width: 100%;
+    max-width: 1920px;
     height: 900px;
 }
 
@@ -451,11 +404,44 @@ ion-icon{
 .item_slider_left {
     background: blueviolet;
     flex-basis: 15%;
+    height: 100%;
+}
+
+.prev {
+    position:relative;
+    width: 220px;
+    height: 50%;
+    top: 450px;
+}
+
+.prev_line01 {
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 1px;
+    background-color: #fff;
+}
+
+.prev_line02 {
+    width: 55px;
+    height: 3px;
+    position: absolute;
+    left: 80px;
+    background-color: #fff;
+}
+
+.prev_text {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    width: 55px;
+    color: #fff;
+    text-align: center;
+    font-family: 'SUIT-Light';
 }
 
 /* slide */
 .item_slider {
-    /* background: orange; */
     /* position: absolute; */
     width: 1480px;
     height: 100%;
@@ -471,11 +457,13 @@ ion-icon{
     bottom: 0;
     overflow: hidden;
     z-index: 0;
+    max-width: 1920px;
 }
 
 .slide {
     position: absolute;
     width: 100%;
+    max-width: 1920px;
     height: 100%;
     transition: transform 1s cubic-bezier(0.85, 0, 0.15, 1);
     display: flex;
@@ -483,10 +471,12 @@ ion-icon{
     align-items: center;
     text-align: center;
     padding: 100px 80px;
+    
 }
 
 .slide-content {
     width: 1320px;
+    /* top: 50%; */
     top: 624px;
     align-items: center;
     /* margin-bottom: 180px; */
@@ -544,12 +534,12 @@ ion-icon{
     width: 100%;
     height: 612px;
     font-family: 'LeferiPoint-BlackA';
-    text-transform: uppercase;  /* 대문자로 변경 */
-    font-weight: 800;  /* 폰트굵기 */
+    text-transform: uppercase;    /* 대문자로 변경 */
+    font-weight: 800;    /* 폰트굵기 */
     font-size: 150px;
-    line-height: 200px;  /* 줄간격 */
+    line-height: 200px;    /* 줄간격 */
     text-align: center;
-    letter-spacing: 1px;  /* 자간 */
+    letter-spacing: 1px;    /* 자간 */
 
     -webkit-text-fill-color: #232323;
     -webkit-text-stroke-width: 1px;
@@ -640,7 +630,6 @@ ion-icon{
     padding: 20px 20px;
 }
 
-
 #slide-radio-1:checked~.pagination label:nth-child(1),
 #slide-radio-2:checked~.pagination label:nth-child(2),
 #slide-radio-3:checked~.pagination label:nth-child(3),
@@ -666,9 +655,7 @@ ion-icon{
     color: #fff;
 }
 
-
-.pagination label::before,
-.pagination label::after {
+.pagination label::before, .pagination label::after {
     content: '';
     border-radius: 50%;
     position: absolute;
@@ -696,36 +683,314 @@ ion-icon{
     height: 100%;
 }
 
+.next {
+    position:relative;
+    width: 220px;
+    height: 50%;
+    top: 450px;
+}
 
+.next_line01 {
+    width: 55px;
+    height: 3px;
+    position: absolute;
+    left: 155px;
+    background-color: #fff;
+}
 
+.next_line02 {
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 1px;
+    left: 210px;
+    background-color: #fff;
+}
 
+.next_text {
+    position: absolute;
+    top: 15px;
+    left: 155px;
+    width: 55px;
+    color: #fff;
+    text-align: center;
+    font-family: 'SUIT-Light';
+}
 
+/* ================== content 시작 ================== */
 
+/* main_ON EXHIBITION */
 .main-content01 {
     position: relative;
-    display: block;
     width: 100%;
+    max-width: 1920px;
     height: 870px;
-    background-color: red;
-    margin: 0 80px;
+    background-color: #1A1A1A;
+    padding: 116px 0 130px 0;
 }
 
-.main-content02{
+.content01-text,
+.content02-text,
+.content04-text {
+    max-width: 1320px;
+    margin: auto;
     display: block;
-    width: 100%;
-    height: 615px;
-    background-color: green;
+    text-align: center;
 }
 
-.main-content03{
-    display: block;
+.maintitle-01 {
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 70px;
+    color: #fff;
+}
+
+.maintitle-02 {
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 75px;
+    color: #232323;
+    margin-bottom: -20px;
+}
+
+.caption-01 {
+    font-family: 'SUIT-Light';
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.caption-02 {
+    font-family: 'SUIT-Regular';
+    font-size: 24px;
+    color: #232323;
+    margin-bottom: 10px;
+}
+
+.main-content01 a {
+    font-family: 'SUIT-SemiBold';
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+.exhibition_line {
+    background: #FF4F33;
+    width: 90px;
+    height: 4px;
+    margin: 8px auto;
+}
+
+.dragslide {
     width: 100%;
+    height: 400px;
+}
+
+/* main_ON FAIR & EXPO */
+.main-content02 {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 650px;
+    background-color: #fff;
+    padding: 110px 0 150px 0;
+}
+
+.main-content02 a {
+    font-family: 'SUIT-SemiBold';
+    font-size: 20px;
+    color: #232323;
+    padding-bottom: 7px;
+}
+
+.fair_line {
+    background: #19fc67;
+    width: 90px;
+    height: 4px;
+    margin: 8px auto;
+}
+
+/* main_FAIRBITION NEWS */
+.main-content03 {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
     height: 770px;
-    background-color: blue;
+    background-color: #232323;
+    padding: 150px 0 110px 0;
 }
-.main-content04{
-    display: block;
+
+.content03-text {
+    margin-left: 225px;
+    padding-top: 25px;
+    letter-spacing: 0px;
+}
+
+.main-content03 a {
+    font-family: 'SUIT-SemiBold';
+    font-size: 20px;
+    color: #E1FF2D;
+}
+
+/* main_Social Media */
+.main-content04 {
+    position: relative;
     width: 100%;
+    max-width: 1920px;
     height: 1160px;
-    background-color: orange;
+    background-color: #fff;
+    padding: 105px 0 120px 0;
+}
+
+.social_line {
+    background: #232323;
+    width: 90px;
+    height: 1px;
+    margin: 45px auto;
+}
+
+.caption-03 {
+    font-family: 'SUIT-SemiBold';
+    font-size: 20x;
+    color: #232323;
+}
+
+/* ================== footer 시작 ================== */
+.footer {
+    display: block;
+    background: #232323;
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    padding: 90px 220px 60px 220px;
+}
+
+.footer_left {
+    width: 50%;
+    height: 200px;
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;  
+    margin-bottom: 30px;  
+}
+
+.footer_logo a {
+    width: 100%;
+    height: 100%;
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 28px;
+    color: #fff;
+}
+
+.footer_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_menu div, .footer_menu p {
+    font-family: 'SUIT-Light';
+    font-size: 16pt;
+    color: #a1a1a1;
+    margin: 10px 20px 0px 0px;
+}
+
+.footer_right {
+    width: 50%;
+    height: 200px;
+    float: right;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 45px;
+    height: 45px;
+    border-radius: 70%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.footer_right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.people_boram {
+    display:flex;
+    float: left;
+    width: 50%;
+    flex-flow: row;
+}
+
+.profile_1 {
+    display:flex;
+    float: left;
+    flex-flow: column nowrap;
+}
+
+.name {
+    font-size: 20pt;
+    font-family: 'SUIT-SemiBold';
+    color: #fff;
+}
+
+.people_line {
+    width: 200px;
+    height: 1px;
+    background-color: #a1a1a1;
+    margin: 10px 0px;
+}
+
+.kakaotalk a, .email a, .site a{
+    color: #a1a1a1;
+    font-size: 14pt;
+    font-family: 'SUIT-Light';
+    line-height: 30px;
+}
+
+.icone_svg {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.icone_svg a {
+    margin-right: 15px;
+}
+
+.people_yewon {
+    display:flex;
+    float: right;
+    width: 50%;
+    flex-flow: row;
+}
+
+.profile_2 {
+    display:flex;
+    float: right;
+    flex-flow: column nowrap;
+}
+
+.footer_copyright {
+    width: 100%;
+    height: 95px;
+    display: inline-block;
+}
+
+.footer_line {
+    width: 1480px;
+    height: 1px;
+    background-color: #a1a1a1;
+    margin: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    height: 100%;
+    color: #a1a1a1;
+    font-size: 13pt;
+    font-family: 'SUIT-Light';
+    margin: 20px 0;
 }
