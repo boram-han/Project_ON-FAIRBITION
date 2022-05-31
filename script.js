@@ -13,7 +13,7 @@ const pTag1 = document.querySelector('.first_parallel')
 const textArr1 = 'ON FAIRBITION ON FAIRBITION ON FAIRBITION ON FAIRBITION ON FAIRBITION ON FAIRBITION ON FAIRBITION ON FAIRBITION ON FAIRBITION'.split(' ')
 
 function initTexts(element, textArray) {
-    textArray.push(...textArray) 
+    textArray.push(...textArray)
     for (let i = 0; i < textArray.length; i++) {
         element.innerText += `${textArray[i]}\u00a0\u00a0`
     }
@@ -42,16 +42,79 @@ function animate() {
 
 animate()
 
-// 서치바기능
-function searchToggle(obj, evt){
-    var container = $(obj).closest('.search-wrapper');
-        if(!container.hasClass('active')){
-            container.addClass('active');
-            evt.preventDefault();
-        }
-        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-            container.removeClass('active');
-            // clear input
-            container.find('.search-input').val('');
-        }
-}
+// 메인 슬라이드 버튼
+document.querySelector('.slide_btn1').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(0)';
+    document.querySelector('.slide_btn1').style.opacity = '0';
+    document.querySelector('.slide_btn1_2').style.opacity = '1';
+});
+
+document.querySelector('.slide_btn1_2').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(0)';
+    // document.querySelector('.slide_btn1').style.opacity = '1';
+    // document.querySelector('.slide_btn1_2').style.opacity = '0';
+    document.querySelector('.slide_btn2').style.opacity = '1';
+    document.querySelector('.slide_btn2_2').style.opacity = '0';
+    document.querySelector('.slide_btn3').style.opacity = '1';
+    document.querySelector('.slide_btn3_2').style.opacity = '0';
+    document.querySelector('.slide_btn4').style.opacity = '1';
+    document.querySelector('.slide_btn4_2').style.opacity = '0';
+});
+
+// ----------------
+document.querySelector('.slide_btn2').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(-1344px)';
+    document.querySelector('.slide_btn1').style.opacity = '0';
+    document.querySelector('.slide_btn1_2').style.opacity = '1';
+    document.querySelector('.slide_btn2').style.opacity = '0';
+    document.querySelector('.slide_btn2_2').style.opacity = '1';
+});
+
+document.querySelector('.slide_btn2_2').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(-0px)';
+    document.querySelector('.slide_btn2').style.opacity = '1';
+    document.querySelector('.slide_btn2_2').style.opacity = '0';
+    document.querySelector('.slide_btn3').style.opacity = '1';
+    document.querySelector('.slide_btn3_2').style.opacity = '0';
+    document.querySelector('.slide_btn4').style.opacity = '1';
+    document.querySelector('.slide_btn4_2').style.opacity = '0';
+});
+
+// ----------------
+document.querySelector('.slide_btn3').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(-2688px)';
+    document.querySelector('.slide_btn1').style.opacity = '0';
+    document.querySelector('.slide_btn1_2').style.opacity = '1';
+    document.querySelector('.slide_btn2').style.opacity = '0';
+    document.querySelector('.slide_btn2_2').style.opacity = '1';
+    document.querySelector('.slide_btn3').style.opacity = '0';
+    document.querySelector('.slide_btn3_2').style.opacity = '1';
+});
+
+document.querySelector('.slide_btn3_2').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(-1344px)';
+    document.querySelector('.slide_btn3').style.opacity = '1';
+    document.querySelector('.slide_btn3_2').style.opacity = '0';
+    document.querySelector('.slide_btn4').style.opacity = '1';
+    document.querySelector('.slide_btn4_2').style.opacity = '0';
+});
+
+// ----------------
+document.querySelector('.slide_btn4').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(-4032px)';
+    document.querySelector('.slide_btn1').style.opacity = '0';
+    document.querySelector('.slide_btn1_2').style.opacity = '1';
+    document.querySelector('.slide_btn2').style.opacity = '0';
+    document.querySelector('.slide_btn2_2').style.opacity = '1';
+    document.querySelector('.slide_btn3').style.opacity = '0';
+    document.querySelector('.slide_btn3_2').style.opacity = '1';
+    document.querySelector('.slide_btn4').style.opacity = '0';
+    document.querySelector('.slide_btn4_2').style.opacity = '1';
+});
+
+document.querySelector('.slide_btn4_2').addEventListener('click', function () {
+    document.querySelector('.slides').style.transform = 'translate(-2688px)';
+    document.querySelector('.slide_btn4').style.opacity = '1';
+    document.querySelector('.slide_btn4_2').style.opacity = '0';
+});
+
