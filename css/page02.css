@@ -437,6 +437,7 @@ main {
 
 .slide_btn_right {
     position: absolute;
+    opacity: 0.5;
     width: 15px;
     top: 595px;
     right: 95px;
