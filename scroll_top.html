@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll To Top Button</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min/js"></script>
+</head>
+
+<style>
+    html {
+        background-color: #232323;
+    }
+
+    .Lorem_Ipsum p {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    #btnScrollToTop {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0.25);
+        color: #a1a1a1;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #btnScrollToTop:active {
+        background-color: #e1ff2d;
+    }
+</style>
+
+<body>
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <div class="Lorem_Ipsum">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque lorem ut urna mollis, quis
+            euismod quam volutpat. Vestibulum convallis auctor nibh, ac dapibus felis imperdiet nec. Ut congue, eros et
+            molestie placerat, urna sapien laoreet felis, et fringilla augue tellus sagittis lorem. Quisque non pharetra
+            odio, quis iaculis eros. Pellentesque sed velit lacus. Suspendisse pulvinar tincidunt justo in mollis. Sed
+            felis elit, vestibulum eget aliquam et, vulputate sed ligula. Etiam neque orci, consectetur nec euismod vel,
+            lobortis et dui. Aliquam at volutpat justo. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Aenean tristique rhoncus arcu, eu vulputate turpis consequat in.</p>
+        <p>Proin hendrerit nibh nec nisi suscipit auctor a id est. Proin dignissim fermentum tortor vitae sagittis.
+            Suspendisse aliquam, mi eget sagittis commodo, massa nisi sagittis velit, eget congue metus elit a odio.
+            Donec nunc felis, varius quis mi eget, feugiat ullamcorper elit. Praesent eu metus tincidunt, molestie nunc
+            dapibus, commodo turpis. Ut cursus fermentum lacinia. Etiam maximus feugiat risus, quis feugiat orci
+            tincidunt quis. Sed ullamcorper et ante ut euismod. Etiam pellentesque imperdiet consequat.</p>
+        <p>Quisque at tortor sed lorem congue pharetra. Donec dolor justo, finibus ac faucibus eget, euismod at ligula.
+            Fusce in lacus non justo fringilla egestas a sollicitudin orci. Nullam erat augue, semper at blandit nec,
+            elementum a nisl. Nulla non mollis nibh. Integer mattis faucibus mauris ut posuere. Quisque at sapien
+            molestie, venenatis purus in, auctor dui. Proin id semper leo. Sed malesuada orci nec velit tristique
+            gravida. Maecenas nec arcu sollicitudin, gravida elit sed, elementum mi. Pellentesque sed purus lorem. Nam
+            sit amet justo lobortis, tristique magna vitae, ultrices leo.</p>
+        <p>Morbi ut finibus tellus. Duis eget congue justo. Praesent non justo lorem. Phasellus vel egestas est, in
+            laoreet elit. Cras interdum elit at ligula tempus, ut consequat sapien consectetur. Aliquam sit amet mollis
+            tellus. Integer hendrerit risus consequat, euismod lacus sit amet, fringilla dui. Praesent consectetur leo
+            sed urna commodo, a dapibus nisi egestas. Suspendisse blandit feugiat justo eget scelerisque. Quisque
+            lacinia tempor turpis sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            pellentesque ex quis faucibus tempor. Morbi ut pellentesque ligula, semper fermentum nisi. Proin mattis
+            justo risus, et elementum enim luctus non. Vestibulum tincidunt sed risus non suscipit. Cras nec tristique
+            sapien, et euismod tellus.</p>
+        <p>Aliquam lorem diam, malesuada vel aliquam ac, egestas eu eros. In orci lectus, facilisis a vehicula nec,
+            ultrices ac nunc. Vivamus sed tortor maximus, rutrum eros quis, consequat felis. Suspendisse condimentum
+            nunc eget dictum tincidunt. Vestibulum sollicitudin erat at elit scelerisque, lobortis volutpat libero
+            lacinia. Fusce pharetra risus vitae velit posuere, ac volutpat purus auctor. Integer vehicula lectus mi, non
+            efficitur neque ultrices sit amet. Vivamus ut facilisis sem, sed consequat dolor. Ut ac felis quam.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque lorem ut urna mollis, quis
+            euismod quam volutpat. Vestibulum convallis auctor nibh, ac dapibus felis imperdiet nec. Ut congue, eros et
+            molestie placerat, urna sapien laoreet felis, et fringilla augue tellus sagittis lorem. Quisque non pharetra
+            odio, quis iaculis eros. Pellentesque sed velit lacus. Suspendisse pulvinar tincidunt justo in mollis. Sed
+            felis elit, vestibulum eget aliquam et, vulputate sed ligula. Etiam neque orci, consectetur nec euismod vel,
+            lobortis et dui. Aliquam at volutpat justo. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Aenean tristique rhoncus arcu, eu vulputate turpis consequat in.</p>
+        <p>Proin hendrerit nibh nec nisi suscipit auctor a id est. Proin dignissim fermentum tortor vitae sagittis.
+            Suspendisse aliquam, mi eget sagittis commodo, massa nisi sagittis velit, eget congue metus elit a odio.
+            Donec nunc felis, varius quis mi eget, feugiat ullamcorper elit. Praesent eu metus tincidunt, molestie nunc
+            dapibus, commodo turpis. Ut cursus fermentum lacinia. Etiam maximus feugiat risus, quis feugiat orci
+            tincidunt quis. Sed ullamcorper et ante ut euismod. Etiam pellentesque imperdiet consequat.</p>
+        <p>Quisque at tortor sed lorem congue pharetra. Donec dolor justo, finibus ac faucibus eget, euismod at ligula.
+            Fusce in lacus non justo fringilla egestas a sollicitudin orci. Nullam erat augue, semper at blandit nec,
+            elementum a nisl. Nulla non mollis nibh. Integer mattis faucibus mauris ut posuere. Quisque at sapien
+            molestie, venenatis purus in, auctor dui. Proin id semper leo. Sed malesuada orci nec velit tristique
+            gravida. Maecenas nec arcu sollicitudin, gravida elit sed, elementum mi. Pellentesque sed purus lorem. Nam
+            sit amet justo lobortis, tristique magna vitae, ultrices leo.</p>
+        <p>Morbi ut finibus tellus. Duis eget congue justo. Praesent non justo lorem. Phasellus vel egestas est, in
+            laoreet elit. Cras interdum elit at ligula tempus, ut consequat sapien consectetur. Aliquam sit amet mollis
+            tellus. Integer hendrerit risus consequat, euismod lacus sit amet, fringilla dui. Praesent consectetur leo
+            sed urna commodo, a dapibus nisi egestas. Suspendisse blandit feugiat justo eget scelerisque. Quisque
+            lacinia tempor turpis sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            pellentesque ex quis faucibus tempor. Morbi ut pellentesque ligula, semper fermentum nisi. Proin mattis
+            justo risus, et elementum enim luctus non. Vestibulum tincidunt sed risus non suscipit. Cras nec tristique
+            sapien, et euismod tellus.</p>
+        <p>Aliquam lorem diam, malesuada vel aliquam ac, egestas eu eros. In orci lectus, facilisis a vehicula nec,
+            ultrices ac nunc. Vivamus sed tortor maximus, rutrum eros quis, consequat felis. Suspendisse condimentum
+            nunc eget dictum tincidunt. Vestibulum sollicitudin erat at elit scelerisque, lobortis volutpat libero
+            lacinia. Fusce pharetra risus vitae velit posuere, ac volutpat purus auctor. Integer vehicula lectus mi, non
+            efficitur neque ultrices sit amet. Vivamus ut facilisis sem, sed consequat dolor. Ut ac felis quam.</p>
+
+    </div>
+
+    <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+        btnScrollToTop.addEventListener("click", function () {
+            // window.scrollTo(0, 0);
+
+            window.scrollTo({ 
+                top:0,
+                left:0,
+                behavior: "smooth"
+            }); // 매끄러운 애니메이션
+
+            // $("html, body").animate({ scrollTop: 0 }, "slow");
+            // 모든 브라우저를 지원하는 가장 좋은 방법
+        });
+    </script>
+</body>
+
+</html>
