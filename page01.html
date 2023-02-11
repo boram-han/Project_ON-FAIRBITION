@@ -4,141 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- check windows display settings -->
-    <title>ON FAIRBITION</title>
-    <!-- 파비콘 -->
-    <link rel="icon" href="image/love_letter.ico">
-    <!-- css연결 -->
-    <link rel="stylesheet" href="page01.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website"> <!-- 웹페이지 타입(blog, website 등) -->
+    <meta property="og:title" content="ON FAIRBITION"> <!-- 웹사이트 이름 -->
+    <meta property="og:url" content=""> <!-- 웹페이지 URL -->
+    <meta property="og:image" content=""> <!-- 표시되는 이미지(썸네일느낌, 최소 600*315px, 1200*630 권장.) -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content=""> <!-- 웹페이지 설명 -->
+
+    <title>최최최최종</title>
+
+    <!-- Favicon -->
+    <link rel="SHORTCUT ICON" href="image/favicon"> <!-- 16*16 -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/page01.css">
 </head>
 
 <body>
-    <!-- 네이밍 조합 (형태-의미-순서-상태), _(언더스코어) 조합은 파일, 폴더, 이미지에 사용 -->
 
-    <div class="header">
-        <!-- logo -->
+    <!-- 헤더 영역 -->
+    <header>
+
+        <!-- 로고(s) -->
         <div class="logo">
             <a href="#">
-                <h1><span style="color: #e1ff2d;">ON </span>FAIRBITION</h1>
+                <p><span style="color: #e1ff2d;">ON </span>FAIRBITION</p>
             </a>
         </div>
-        <!-- 네비게이션 -->
-        <div class="nav">
+        <!-- 로고(e) -->
+        <nav>
 
-            <!-- 햄버거메뉴 -->
+            <!-- 검색창(s) -->
+            <div class="searchbox"></div>
+            <!-- 검색창(e) -->
+
+            <!-- 버거메뉴(s) -->
             <div class="burger">
                 <div id="myNav" class="burger_menu">
-
                     <!-- 햄버거 메뉴 클로즈 버튼 -->
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
                     <!-- 메뉴화면 -->
                     <div class="menu_page">
-
                         <!-- 왼쪽 롤링 텍스트 -->
                         <div class="rolling_text">
                             <p class="first_parallel"></p>
                         </div>
 
-                        <!-- 메뉴 카테고리 -->
                         <div class="category">
+                            <!-- menu img -->
+                            <div class="menu_img">
+                                <img src="img/alphabet_A.png" alt="alphabet_a" class="alphabet_a">
+                                <img src="img/alphabet_E.png" alt="alphabet_e" class="alphabet_e">
+                                <img src="img/alphabet_F.png" alt="alphabet_f" class="alphabet_f">
+                                <img src="img/alphabet_O.png" alt="alphabet_o" class="alphabet_o">
+                            </div>
+
+                            <!-- 이미지 아래 선 -->
+                            <div class="menu_line"></div>
 
                             <!-- about -->
                             <div class="menu_about">
-
-                                <div class="alphabet_A">
-                                    <span>A</span>
-                                </div>
-
-                                <ul class="about_sub">
-                                    <li><a href=""
-                                            style="color: #E1FF2D; font-family: LeferiPoint-Black; letter-spacing: 1px;">About</a>
+                                <ul>
+                                    <li><a href="#"
+                                            style="color: #E1FF2D; font-family: LeferiPoint-Black; letter-spacing: 1px; font-size: 22px;">About</a>
                                     </li>
                                 </ul>
-
                             </div>
-
                             <!-- exhibition -->
                             <div class="menu_exhi">
-
-                                <div class="alphabet_E">
-                                    <span>E</span>
-                                </div>
-
-                                <ul class="exhi_sub">
-                                    <li><a href=""
-                                            style="color: #FF4F33; font-family: LeferiPoint-Black; letter-spacing: 1px;">Exhibition</a>
-                                    <li><a href="">전시중</a></li>
-                                    <li><a href="">전시예정</a></li>
-                                    <li><a href="">전시종료</a></li>
-                                    <li><a href="">무료전시</a></li>
-                                    <li><a href="">어린이전시</a></li>
+                                <ul>
+                                    <li><a href="#"
+                                            style="color: #FF4F33; font-family: LeferiPoint-Black; letter-spacing: 1px; font-size: 22px;">Exhibition</a>
+                                    <li><a href="#">전시중</a></li>
+                                    <li><a href="#">전시예정</a></li>
+                                    <li><a href="#">전시종료</a></li>
+                                    <li><a href="#">무료전시</a></li>
+                                    <li><a href="#">어린이전시</a></li>
                                 </ul>
-
                             </div>
-
                             <!-- fair&expo -->
                             <div class="menu_fair">
-
-                                <div class="alphabet_F">
-                                    <span>F</span>
-                                </div>
-
-                                <ul class="fair_sub">
-                                    <li><a href=""
-                                            style="color: #19FC67; font-family: LeferiPoint-Black; letter-spacing: 1px;">Fair
-                                            & Expo</a>
-                                    <li><a href="">진행중</a></li>
-                                    <li><a href="">진행예정</a></li>
-                                    <li><a href="">진행종료</a></li>
-                                    <li><a href="">사전등록중</a></li>
+                                <ul>
+                                    <li><a href="#"
+                                            style="color: #19FC67; font-family: LeferiPoint-Black; letter-spacing: 1px; font-size: 22px;">Fair&Expo</a>
+                                    <li><a href="#">진행중</a></li>
+                                    <li><a href="#">진행예정</a></li>
+                                    <li><a href="#">진행종료</a></li>
+                                    <li><a href="#">사전등록중</a></li>
                                 </ul>
-
                             </div>
-
                             <!-- online -->
                             <div class="menu_online">
-
-                                <div class="alphabet_O">
-                                    <span>O</span>
-                                </div>
-
-                                <ul class="online_sub">
-                                    <li><a href=""
-                                            style="color: #336DFF; font-family: LeferiPoint-Black; letter-spacing: 1px;">Online</a>
-                                    <li><a href="">전시회</a></li>
-                                    <li><a href="">박람회</a></li>
-                                    <li><a href="">진행중</a></li>
-                                    <li><a href="">진행예정</a></li>
-                                    <li><a href="">진행종료</a></li>
+                                <ul>
+                                    <li><a href="#"
+                                            style="color: #336DFF; font-family: LeferiPoint-Black; letter-spacing: 1px; font-size: 22px;">Online</a>
+                                    <li><a href="#">전시회</a></li>
+                                    <li><a href="#">박람회</a></li>
+                                    <li><a href="#">진행중</a></li>
+                                    <li><a href="#">진행예정</a></li>
+                                    <li><a href="#">진행종료</a></li>
                                 </ul>
-
                             </div>
-                            <!-- 알파벳 아래 선 -->
-                            <div class="menu_line">
-                                <hr>
-                            </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- 햄버거메뉴 오픈 버튼 -->
-                <span class="menu_icon" onclick="openNav()"> &#9776;
-                </span>
+                <span class="menu_icon" onclick="openNav()"> &#9776;</span>
             </div>
+            <!-- 버거메뉴(e) -->
+        </nav>
+    </header>
 
-            <!-- 검색메뉴 -->
-            <div class="searchBox">
-                <input type="text" placeholder="Type to Search">
-                <ion-icon name="search"></ion-icon>
-            </div>
-        </div>
-    </div>
+    <main>
+        <!-- 메인 슬라이드(s) -->
+        <section class="main_container">
 
-    <div class="main">
-        <div class="container">
             <div class="item_slider_left">
                 <div class="prev">
                     <div class="prev_line01"></div>
@@ -147,128 +132,100 @@
                 </div>
             </div>
 
-            <div class="item_slider">
-                <div class="slider" id="slider">
-                    <!-- <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="0"
-                        checked id="slide-radio-1">
-                    <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="1"
-                        id="slide-radio-2">
-                    <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="2"
-                        id="slide-radio-3">
-                    <input type="radio" name="slide-radios" class="slide-radio" style="display: none;" data-number="3"
-                        id="slide-radio-4">
-
-                    <div class="pagination">
-                        <label for="slide-radio-1"></label>
-                        <label for="slide-radio-2"></label>
-                        <label for="slide-radio-3"></label>
-                        <label for="slide-radio-4"></label>
-                    </div> -->
-
-                    <!-- 슬라이드01 -->
-                    <div class="slide" id="slide-01">
-                        <div class="slide-content">
-                            <h1>ON FAIRBITION
+            <div class="slider">
+                <div class="slide_contents">
+                    <div class="slides">
+                        <!-- 슬라이드01 -->
+                        <div class="slide" id="slide-01">
+                            <h1>
+                                ON FAIRBITION
                                 <span class="slide-pointtext-01">ON FAIRBITION</span>
                                 ON FAIRBITION
                             </h1>
                             <a href="#">스크롤다운</a>
                         </div>
-                    </div>
-                    <!-- 슬라이드02 -->
-                    <div class="slide" id="slide-02">
-                        <div class="slide-content">
-                            <h1><span style=letter-spacing:0.2em;>EXHIBITION
-                                    <span class="slide-pointtext-02">EXHIBITION</span>
-                                    EXHIBITION</span></h1>
+
+                        <!-- 슬라이드02 -->
+                        <div class="slide" id="slide-02">
+                            <h1 style="letter-spacing:0.2em; margin-right:-0.2em;">
+                                EXHIBITION
+                                <span class="slide-pointtext-02">EXHIBITION</span>
+                                EXHIBITION
+                            </h1>
                             <a href="#"><span>전시</span> 확인하기</a>
                         </div>
-                    </div>
-                    <!-- 슬라이드03 -->
-                    <div class="slide" id="slide-03">
-                        <div class="slide-content">
-                            <h1><span style=letter-spacing:0.2em;>FAIR&EXPO
-                                    <span class="slide-pointtext-03">FAIR&EXPO</span>
-                                    FAIR&EXPO</span></h1>
+
+                        <!-- 슬라이드03 -->
+                        <div class="slide" id="slide-03">
+                            <h1 style="letter-spacing:0.2em; margin-right:-0.2em;">
+                                FAIR&EXPO
+                                <span class="slide-pointtext-03">FAIR&EXPO</span>
+                                FAIR&EXPO
+                            </h1>
                             <a href="#"><span>전시</span> 확인하기</a>
                         </div>
-                    </div>
-                    <!-- 슬라이드 04 -->
-                    <div class="slide" id="slide-04">
-                        <div class="slide-content">
-                            <h1><span style=letter-spacing:0.45em;>ON-LINE<br>
-                                    <span class="slide-pointtext-04">ON-LINE</span><br>
-                                    ON-LINE</span></h1>
+
+                        <!-- 슬라이드04 -->
+                        <div class="slide" id="slide-04">
+                            <h1 style="letter-spacing: 0.45em; margin-right: -0.45em;">
+                                ON-LINE
+                                <span class="slide-pointtext-04">ON-LINE</span>
+                                ON-LINE
+                            </h1>
                             <a href="#"><span>전시</span> 확인하기</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="slide_btn">
+                <div class="slide_btn_right">
+                    <button type="button" class="slide_btn1"></button>
+                    <button type="button" class="slide_btn2"></button>
+                    <button type="button" class="slide_btn3"></button>
+                    <button type="button" class="slide_btn4"></button>
+                </div>
+                <div class="slide_btn_left">
+                    <button type="button" class="slide_btn1_2"></button>
+                    <button type="button" class="slide_btn2_2"></button>
+                    <button type="button" class="slide_btn3_2"></button>
+                    <button type="button" class="slide_btn4_2"></button>
+                </div>
             </div>
 
             <div class="item_slider_right">
-                <div class="prev">
+                <div class="next">
                     <div class="next_line01"></div>
                     <div class="next_line02"></div>
                     <div class="next_text">NEXT</div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="main-content01">
-        <div class="content01-text">
-            <p></p>
-            <p></p>
-            <a href="#"></a>
-        </div>
-        <div class="dragslide">
-            <div class="slidebox" id="dragslide-slide01"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide02"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide03"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide04"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide05"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide06"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide07"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide08"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide09"><a href="#"><img src=""></a></div>
-            <div class="slidebox" id="dragslide-slide10"><a href="#"><img src=""></a></div>
-        </div>
-    </div>
+        </section>
+        <!-- 메인 슬라이드(e) -->
 
-    <div class="main-content02">
-        <div class="content02-text">
-            <p></p>
-            <p></p>
-            <a href="#"></a>
-        </div>
-        <div class="section">
-            <div class="aside01"><a href="#"><img src=""></a></div>
-            <div class="aside02"><a href="#"><img src=""></a></div>
-            <div class="aside03"><a href="#"><img src=""></a></div>
-        </div>
-    </div>
+        <!-- 컨텐츠1_핫한전시(s) -->
+        <section class="main_sect1"></section>
+        <!-- 컨텐츠1_핫한전시(e) -->
 
-    <div class="main-content03">
-        <div class="content03-text">
-            <p></p>
-            <p></p>
-            <a href="#"></a>
-        </div>
-        <div class="news"></div>
-    </div>
+        <!-- 컨텐츠2_인기박람회(s) -->
+        <section class="main_sect2"></section>
+        <!-- 컨텐츠2_인기박람회(e) -->
 
-    <div class="main-content04">
-        <div class="content04-text">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-        <div class="sns"></div>
-    </div>
+        <!-- 컨텐츠3_뉴스(s) -->
+        <section class="main_sect3"></section>
+        <!-- 컨텐츠3_뉴스(e) -->
 
-    <div class="footer"></div>
+        <!-- 컨텐츠4_Social(s) -->
+        <section class="main_sect4"></section>
+        <!-- 컨텐츠4_Social(e) -->
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer></footer>
+
 </body>
+<!-- Javascript -->
 
 <!-- search -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -278,10 +235,11 @@
 
 </html>
 
-<!-- [html]
-- 가로 줄로 쪼개고 div 부여!
-- div  내부를 적절한 태그로 채우기!
 
-[css]
-- 가로로 배치할 내용에 float: left 부여
-- 가로로 배치할 내용을 감싼 div에 clearfix class 부여 -->
+<!-- [x]  reset 적용해보기 -->
+<!-- [x]  <header>로고<nav>검색창, 햄버거메뉴(사이드메뉴)<main>슬라이드<section><article><footer>address -->
+<!-- [x]  header table → flex로 변경 -->
+<!-- [ ]  메인페이지 컨텐츠1~4 <h1><h2>으로 수정 -->
+<!-- [ ]  메인 슬라이드 <h1> “폰트사이즈”로 수정 -->
+<!-- [ ]  메인 슬라이드 정리 -->
+<!-- [ ]  메인 컨텐츠 코딩 마무리하기 -->
