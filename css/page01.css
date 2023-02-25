@@ -137,8 +137,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
- }
-
+}
 
 body {
     background-color: #232323;
@@ -148,6 +147,7 @@ body {
     box-sizing: border-box;
     /* font-family: 'SUIT-Light'; */
     overflow-x: hidden;
+    font-family: ‘SUIT’, sans-serif;
 }
 
 /* ========== 헤더 ========== */
@@ -396,6 +396,7 @@ main {
 }
 
 .main_container {
+    /*background-color: gray;*/
     width: 100%;
     height: 900px;
     display: flex;
@@ -709,6 +710,46 @@ main {
     padding: 116px 0 130px 0;
 }
 
+.sect1_text, .sect2_text, .sect4_text{
+    max-width: 1320px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+h1{
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 70px;
+    color: #fff;
+}
+
+h2{
+    font-family: 'SUIT'; /* Light */
+    font-weight: 300;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.main_sect1 a, .main_sect2, .main_sect3 a{
+    font-family: 'SUIT'; /* Regular */
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+.sect1_line, .sect2_line {
+    background: #FF4F33;
+    width: 90px;
+    height: 4px;
+    margin: auto;
+}
+
+.drag_slide{
+    width: 100%;
+}
+
 /* ========== main_sect2 ========== */
 .main_sect2 {
     position: relative;
@@ -716,6 +757,46 @@ main {
     height: 650px;
     background-color: #fff;
     padding: 110px 0 150px 0;
+}
+
+.sect2_article{
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.sect2_article01{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    align-content: center;
+    color: #232323;
+    font-size: 16px;
+    
+}
+
+.sect2_article02{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    align-content: center;
+    color: #232323;
+    font-size: 16px;
+}
+
+.sect2_article03{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    color: #232323;
+    font-size: 16px;
+    align-items: center;
+    align-content: center;
 }
 
 /* ========== main_sect3 ========== */
@@ -727,6 +808,12 @@ main {
     padding: 150px 0 110px 0;
 }
 
+.sect3_text{
+    margin-left: 220px;
+    padding-top: 25px;
+    /* letter-spacing: 0px; */
+}
+
 /* ========== main_sect4 ========== */
 .main_sect4 {
     position: relative;
@@ -736,11 +823,260 @@ main {
     padding: 105px 0 120px 0;
 }
 
+.sect4_line {
+    background: #232323;
+    width: 60px;
+    height: 1px;
+    margin: 40px auto;
+}
+
+.caption03{
+    font-family: 'SUIT'; /* Semi Bold */
+    font-weight: 600;
+    font-size: 20x;
+    color: #232323;
+    padding-bottom: 20px;
+}
+
+.sns_image_gallery{
+    width: 1320px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0px;
+    grid-template-areas: 
+    "img1 img2 img2 img3"
+    "img4 img2 img2 img5";
+}
+
+.sns_image_gallery .gallery_img{
+    width: 100%;
+    height: 312px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/*image*/
+.sns_image_gallery .img1{
+    grid-area: img1;
+    background-color: purple;
+    /* background-image: url("../image/img1.jpg"); */
+}
+.sns_image_gallery .img2{
+    grid-area: img2;
+    background-color: orange;
+    /* background-image: url("../image/img2.jpg"); */
+    height: 624px;
+}
+.sns_image_gallery .img3{
+    grid-area: img3;
+    background-color: yellow;
+    /* background-image: url("../image/img3.jpg"); */
+}
+.sns_image_gallery .img4{
+    grid-area: img4;
+    background-color: green;
+    /* background-image: url("../image/img4.jpg"); */
+}
+.sns_image_gallery .img5{
+    grid-area: img5;
+    background-color: blue;
+    /* background-image: url("../image/img5.jpg"); */
+}
+
+/*gallery image titles*/
+.gallery_img .media_id{
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+    opacity: 0;
+}
+
+.gallery_img div:hover{
+    opacity: 0.7;
+    transition: all ease-in-out 100ms;
+}
+
+.media_id p{
+    padding: 15px 15px;
+    height: 24px;
+    color: #fff;
+    font-family: 'SUIT'; /* Regular */
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-decoration: none;
+}  
+
+.media_id span{
+    margin: 0 7px 0 0;
+    font-size: 0.8em;
+    color: #a1a1a1;
+    padding: 0 0 0 15px;
+}
+
+.media_id ion-icon{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    font-size: 0.8em;
+    /* right: 15px;  */
+}
+
+.media_icone{
+    display: flex;
+}
+
 /* ========== 푸터 ========== */
 footer {
+    /* position: relative; */
     display: block;
     background: #232323;
     width: 100%;
-    height: 400px;
+    height: 230px;
+    margin-top: 70px;
     /* padding: 90px 220px 60px 220px; */
+}
+
+.footer_top {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sitemap {
+    /* background-color: blue; */
+    width: 60%;
+    flex-basis: 55%;
+    padding-left: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo a {
+    width: 100%;
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 28px;
+    color: #fff;
+}
+
+.footer_menu {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer_menu div, .footer_menu p {
+    font-family: 'SUIT';    /* Light */
+    font-weight: 300;
+    font-size: 12pt;
+    color: #a1a1a1;
+    letter-spacing: 1px;    /* 자간 */
+    margin: 5px 15px 0px 0px;
+}
+
+.address {
+    /* background-color: red; */
+    width: 50%;
+    flex-basis: 45%;
+    /* padding-right: 220px; */
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.people_boram{
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-right: 20px;
+}
+
+.people_yewon {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.profile_br, .profile_yw {
+    width: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.imagebox {
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.address img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 20pt;
+    font-family: 'SUIT';    /* Semi Bold */
+    font-weight: 600;
+    color: #fff;
+}
+
+.profile_br span, .profile_yw span {
+    font-size: 12pt;
+    font-family: 'SUIT';    /* Light */
+    font-weight: 300;
+    color: #a1a1a1;
+}
+
+.material-icons{
+    color: #a1a1a1;
+    /* font-size: 24pt; */
+    margin: -2.5px;
+}
+
+.icone_svg {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icone_svg a {
+    padding-right: 14px;
+    color: inherit;
+}
+
+.copyright {
+    width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.footer_line {
+    display: flex;
+    width: 1480px;
+    height: 1px;
+    background-color: #a1a1a1;
+    margin: 0px auto;
+}
+
+.copyright_text {
+    width: 100%;
+    color: #a1a1a1;
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+
+.copyright_text p {
+    font-size: 12pt;
+    font-family: 'SUIT';    /* Extra-Light */
+    font-weight: 200;
 }
